@@ -2,7 +2,8 @@
 
 const DefaultSettings = {
 blacklist: {},
-delay: 150
+delay: 150,
+enabled: true
 }
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {

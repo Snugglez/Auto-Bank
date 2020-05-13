@@ -48,11 +48,15 @@ module.exports = function testmod(d) {
   }
 
   //try to bank shit when first opening bank and when changing tabs
-  d.hook('C_VIEW_WARE', 'event', () => { viewBank() })
-  d.hook('S_REQUEST_CONTRACT', 1, (e) => { if (e.type === 26) { viewBank(); banking = true } })
+  d.hook('C_VIEW_WARE', 'event', () => { if (!d.settings.enabled) return; viewBank() })
+  d.hook('S_REQUEST_CONTRACT', 1, (e) => { if (e.type === 26 && d.settings.enabled) { viewBank(); banking = true } })
 
   //command to do shit, probably make delay configurable at some point
   d.command.add('banker', {
+    $none() {
+      d.settings.enabled = !d.settings.enabled
+      d.command.message(`Auto-Banker is now ${d.settings.enabled ? 'enabled' : 'disabled'}.`)
+    },
     delay(ms) {
       d.settings.delay = parseInt(ms, 10)
       d.command.message(`bank delay set to ${d.settings.delay} ms`)
