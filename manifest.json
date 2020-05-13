@@ -1,0 +1,14 @@
+{
+	"files": {
+		"README.md": "187422c921569588a33acce686fa808ab91ae20c28fd0dc0fba9945a705f5cab",
+		"config_generator.js": "377cdeb125f9ccfb206a033342e1014b006e60322d5f5b666e409596d6857c68",
+		"index.js": "e9d0861c7ce936d24cb4c55f30bc6bf81d7ad846187b64726786b1492037361b",
+		"module.json": "15c482d32f1b3bafc53e999716433d8f504b34b8dd8f6201a845ae93b3f7f6d1"
+	},
+	"defs": {
+		"C_PUT_WARE_ITEM": 3,
+		"C_VIEW_WARE": 2,
+		"S_REQUEST_CONTRACT": 1,
+		"S_VIEW_WARE_EX": 2
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"disableAutoUpdate": false,
+	"name": "auto-bank",
+	"options": {
+		"guiName": "auto-bank",
+		"niceName": "auto-bank",
+		"settingsVersion": 2,
+		"settingsFile": "config.json",
+		"settingsMigrator": "config_generator.js"
+	},
+    "author": "Snug / Prav / Seraph",
+    "description": "Automatically banks items that exist in both your bank and inventory with minimal set up",
+    "version": "1",
+	"servers": ["https://raw.githubusercontent.com/Snugglez/Auto-Bank/master/"],
+	"supportUrl": "https://github.com/Snugglez/Auto-Bank/blob/master/README.md"
+}
