@@ -10,11 +10,13 @@ module.exports = function testmod(d) {
 
   //what we have here is some next level autism cause im retarded
   const startBank = async (e) => {
+    if (![1, 9].includes(e.container)) return
     ((e.numUnlockedSlots - e.offset) / 72) > 1 ? ev = e : ev = null
     if (((e.numUnlockedSlots - e.offset) / 72) <= 1) banking = false
     await asyncForEach(e.items, async (item) => {
       const tempItem = d.game.inventory.findInBagOrPockets(item.id)
-      if (tempItem === undefined || d.settings.blacklist[item.id] || ![1, 9].includes(e.container)) return
+      if (tempItem === undefined || d.settings.blacklist[item.id]) return
+      if (tempItem.amount > 1) { tempItem.amount = d.game.inventory.getTotalAmountInBagOrPockets(tempItem.id) }
       await sleep(d.settings.delay) //cause I need a fucking nap from life
       d.send('C_PUT_WARE_ITEM', 3, {
         gameId: d.game.me.gameId,
@@ -24,7 +26,7 @@ module.exports = function testmod(d) {
         fromSlot: tempItem.slot,
         id: tempItem.id,
         dbid: tempItem.dbid,
-        amount: d.game.inventory.getTotalAmountInBagOrPockets(tempItem.id),
+        amount: tempItem.amount,
         toSlot: e.offset
       })
     })
