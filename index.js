@@ -64,8 +64,10 @@ module.exports = function testmod(d) {
       d.command.message(`bank delay set to ${d.settings.delay} ms`)
     },
     bl(action, id) {
+      if (!id) return d.command.message(`${id} invalid command usage consult readme for an example`)
+
       const matchedId = id.match(regexId)
-      if (!matchedId) return
+      if (!matchedId) return d.command.message(`${id} is not a valid item id, consult readme for an example`)
       const parsedId = parseInt(matchedId[1], 10)
 
       if (action === 'add') {

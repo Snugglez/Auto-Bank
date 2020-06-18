@@ -1,14 +1,14 @@
 {
-	"files": {
-		"README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
-		"config_generator.js": "8239540d6441f0cfb82883a47bdc60d353113247af42c5c5adc5f2fbab7db6f5",
-		"index.js": "815a4f899bec535574f4d6ba42eadbdfb6ac010d2b12b6bfe4855b8f68e8eae3",
-		"module.json": "fe48d01683821d050d4ab282b7cf032a67ca1d7e2aa6aa44be8f4e1aef263d97"
-	},
-	"defs": {
-		"C_PUT_WARE_ITEM": 3,
-		"C_VIEW_WARE": 2,
-		"S_REQUEST_CONTRACT": 1,
-		"S_VIEW_WARE_EX": 2
-	}
+  "files": {
+    "README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
+    "config_generator.js": "2e9159c03d387bdc4ed24b85cfa732107cb3385c465eb6b35a3db965dc2a3a3c",
+    "index.js": "0602f32608f9ee8b6bdea19524ff66cb7e21e418d8692cc5072a1dd83f44eee5",
+    "module.json": "11c2deba184623aa195751067755f13e964815af8076f468ccb66e18ab4e6823"
+  },
+  "defs": {
+    "C_PUT_WARE_ITEM": 3,
+    "C_VIEW_WARE": 2,
+    "S_REQUEST_CONTRACT": 1,
+    "S_VIEW_WARE_EX": 2
+  }
 }
