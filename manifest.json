@@ -3,7 +3,7 @@
     "README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
     "config_generator.js": "2e9159c03d387bdc4ed24b85cfa732107cb3385c465eb6b35a3db965dc2a3a3c",
     "index.js": "2361cecd0b1a4eb032eb08fdf452d99e8204968a319cd2be5b5d6991277f7646",
-    "module.json": "11c2deba184623aa195751067755f13e964815af8076f468ccb66e18ab4e6823"
+    "module.json": "fe48d01683821d050d4ab282b7cf032a67ca1d7e2aa6aa44be8f4e1aef263d97"
   },
   "defs": {
     "C_PUT_WARE_ITEM": 3,
