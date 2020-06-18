@@ -45,5 +45,5 @@ files.forEach(filePath => {
     manifest.files[file] = crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname, file))).digest('hex')
 })
 
-//save file
-fs.writeFileSync(path.join(__dirname, 'manifest.json'), JSON.stringify(manifest, null, '  '), 'utf8')
+//save file and add an empty line at the end
+fs.writeFileSync(path.join(__dirname, 'manifest.json'), JSON.stringify(manifest, null, '  ') + '\n', 'utf8')
