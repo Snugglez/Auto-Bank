@@ -1,10 +1,8 @@
 {
 	"files": {
 		"README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
-		"config.json": "894afccf503c63898c54ec25f75a2a8650ff05f7eec540d0dcaf0b0567972f70",
 		"config_generator.js": "2e9159c03d387bdc4ed24b85cfa732107cb3385c465eb6b35a3db965dc2a3a3c",
-		"index.js": "fb243407f7b1c38e69e4da012a309927bd5a0926177621758716558cafff50ff",
-		"module.json": "fe48d01683821d050d4ab282b7cf032a67ca1d7e2aa6aa44be8f4e1aef263d97"
+		"index.js": "fb243407f7b1c38e69e4da012a309927bd5a0926177621758716558cafff50ff"
 	},
 	"defs": {
 		"C_PUT_WARE_ITEM": 3,
