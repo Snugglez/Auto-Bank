@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "data": {
+        "blacklist": {
+            "80081": true,
+            "200921": true,
+            "202015": true,
+            "207582": true
+        },
+        "delay": 150,
+        "enabled": true
+    }
+}
