@@ -2,12 +2,13 @@
 	"files": {
 		"README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
 		"config_generator.js": "2e9159c03d387bdc4ed24b85cfa732107cb3385c465eb6b35a3db965dc2a3a3c",
-		"index.js": "04d42db709f00efc816f3f571e331e2ba13848f3e9442fc45d740cf9c339846e"
+		"index.js": "fb243407f7b1c38e69e4da012a309927bd5a0926177621758716558cafff50ff",
+		"module.json": "cacaa0de0d82769969330526d1eca2ebab14d0e7b671317973554f897085e2f4"
 	},
 	"defs": {
 		"C_PUT_WARE_ITEM": 3,
 		"C_VIEW_WARE": 2,
 		"S_REQUEST_CONTRACT": 1,
-		"S_VIEW_WARE_EX": [2,3]
+		"S_VIEW_WARE_EX": 3
 	}
 }

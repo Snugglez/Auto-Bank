@@ -1,16 +1,22 @@
 {
-	"disableAutoUpdate": false,
-	"name": "auto-bank",
-	"options": {
-		"guiName": "auto-bank",
-		"niceName": "auto-bank",
-		"settingsVersion": 3,
-		"settingsFile": "config.json",
-		"settingsMigrator": "config_generator.js"
-	},
+    "disableAutoUpdate": false,
+    "name": "auto-bank",
+    "options": {
+        "guiName": "auto-bank",
+        "settingsVersion": 3,
+        "settingsFile": "config.json",
+        "settingsMigrator": "config_generator.js",
+        "cliName": "auto-bank"
+    },
     "author": "Snug / Prav / Seraph",
+	"donationUrl": "https://play.google.com/store/apps/details?id=com.CarvedGames.SD",
     "description": "Automatically banks items that exist in both your bank and inventory with minimal set up",
     "version": "1.1",
-	"servers": ["https://raw.githubusercontent.com/Snugglez/Auto-Bank/master/"],
-	"supportUrl": "https://github.com/Snugglez/Auto-Bank/blob/master/README.md"
+    "servers": [
+        "https://raw.githubusercontent.com/Snugglez/Auto-Bank/master/"
+    ],
+    "supportUrl": "https://github.com/Snugglez/Auto-Bank/blob/master/README.md",
+    "keywords": [
+        "network"
+    ]
 }

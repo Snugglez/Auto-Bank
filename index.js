@@ -44,7 +44,7 @@ module.exports = function testmod(d) {
   }
   //shitty function to bank shit in bank/petbank
   function viewBank() {
-    d.hookOnce('S_VIEW_WARE_EX', d.majorPatchVersion >= 96 ? 3 : 2, (e) => {
+    d.hookOnce('S_VIEW_WARE_EX', 3, (e) => {
       startBank(e)
     })
   }
