@@ -44,14 +44,14 @@ module.exports = function testmod(d) {
   }
   //shitty function to bank shit in bank/petbank
   function viewBank() {
-    d.hookOnce('S_VIEW_WARE_EX', 3, (e) => {
+    d.hookOnce('S_VIEW_WARE_EX', d.majorPatchVersion >= 96 ? 3 : 2, (e) => {
       startBank(e)
     })
   }
 
   //try to bank shit when first opening bank and when changing tabs
   d.hook('C_VIEW_WARE', 'event', () => { if (!d.settings.enabled) return; viewBank() })
-  d.hook('S_REQUEST_CONTRACT', 1, (e) => { if (e.type === 26 && d.settings.enabled) { viewBank(); banking = true } })
+  d.hook('S_REQUEST_CONTRACT', 2, (e) => { if (e.type === 26 && d.settings.enabled) { viewBank(); banking = true } })
 
   //command to do shit, probably make delay configurable at some point
   d.command.add('banker', {
