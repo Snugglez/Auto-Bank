@@ -1,4 +1,8 @@
 module.exports = function testmod(d) {
+  if (d.majorPatchVersion == 92) {
+    d.dispatch.addDefinition('S_VIEW_WARE_EX', 0, __dirname + '//res//S_VIEW_WARE_EX.def', true)
+    d.dispatch.addDefinition('C_PUT_WARE_ITEM', 0, __dirname + '//res//C_PUT_WARE_ITEM.def', true)
+  }
   d.game.initialize('inventory')
   const regexId = /#(\d*)@/
   let ev,
@@ -18,7 +22,7 @@ module.exports = function testmod(d) {
       if (tempItem === undefined || d.settings.blacklist[item.id]) return
       if (tempItem.amount > 1) { tempItem.amount = d.game.inventory.getTotalAmountInBagOrPockets(tempItem.id) }
       await sleep(d.settings.delay) //cause I need a fucking nap from life
-      d.send('C_PUT_WARE_ITEM', 3, {
+      d.send('C_PUT_WARE_ITEM', '*', {
         gameId: d.game.me.gameId,
         container: e.container,
         offset: e.offset,
@@ -44,14 +48,14 @@ module.exports = function testmod(d) {
   }
   //shitty function to bank shit in bank/petbank
   function viewBank() {
-    d.hookOnce('S_VIEW_WARE_EX', d.majorPatchVersion >= 96 ? 3 : 2, (e) => {
+    d.hookOnce('S_VIEW_WARE_EX', '*', (e) => {
       startBank(e)
     })
   }
 
   //try to bank shit when first opening bank and when changing tabs
   d.hook('C_VIEW_WARE', 'event', () => { if (!d.settings.enabled) return; viewBank() })
-  d.hook('S_REQUEST_CONTRACT', 2, (e) => { if (e.type === 26 && d.settings.enabled) { viewBank(); banking = true } })
+  d.hook('S_REQUEST_CONTRACT', '*', (e) => { if (e.type === 26 && d.settings.enabled) { viewBank(); banking = true } })
 
   //command to do shit, probably make delay configurable at some point
   d.command.add('banker', {

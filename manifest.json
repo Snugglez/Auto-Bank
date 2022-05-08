@@ -2,13 +2,9 @@
 	"files": {
 		"README.md": "0d16323f3ce30a5f11162a968e8eaa1f8f63e505237ced157c24878ee1a3ba25",
 		"config_generator.js": "2e9159c03d387bdc4ed24b85cfa732107cb3385c465eb6b35a3db965dc2a3a3c",
-		"index.js": "c796062ae19176656dde34a0c28d889304c40d5c853eb35eb28cf1f8fb02138f",
-		"module.json": "fe48d01683821d050d4ab282b7cf032a67ca1d7e2aa6aa44be8f4e1aef263d97"
-	},
-	"defs": {
-		"C_PUT_WARE_ITEM": 3,
-		"C_VIEW_WARE": 2,
-		"S_REQUEST_CONTRACT": [1,2],
-		"S_VIEW_WARE_EX": [2,3]
+		"index.js": "23e3eb407b2c5d91a44169c288429049efe02fc8449fedc208b12a77a0e99bc6",
+		"module.json": "fe48d01683821d050d4ab282b7cf032a67ca1d7e2aa6aa44be8f4e1aef263d97",
+		"res/C_PUT_WARE_ITEM.def": "588f71f92802d4eefb7d44c5545105af55ac89fe0ba0ab404bfe5fd1384cb4dd",
+		"res/S_VIEW_WARE_EX.def": "183250b91f0fabd99744415ec6767bb17b44b189565df746810180f55250f0bd"
 	}
 }
